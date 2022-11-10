@@ -4,8 +4,8 @@ import {DataDisplayExample} from "../Tests/DataDisplay/Mui";
 import {FormExample} from "../Tests/Form/Mui";
 import {NotificationExample} from "../Tests/Notification/Mui";
 import {StoreStructureExample} from "../Tests/StoreStructure/Mui";
-import {createTheme, Stack, Theme, ThemeProvider, Typography} from "@mui/material";
-import {TestProps, ThemeColor} from "../App";
+import {Stack, Typography} from "@mui/material";
+import {TestProps} from "../App";
 
 // const lilaTheme = createTheme({
 //     palette: {

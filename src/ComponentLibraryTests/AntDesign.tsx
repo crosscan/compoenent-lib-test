@@ -8,6 +8,7 @@ import {DataDisplayExample} from "../Tests/DataDisplay/AntDesign";
 import {FormExample} from "../Tests/Form/AntDesign";
 import {NotificationExample} from "../Tests/Notification/AntDesign";
 import {StoreStructureExample} from "../Tests/StoreStructure/AntDesign";
+import CustomizedComponentExample from "../Tests/CustomComponents/AntDesign";
 
 const AntDesignTest: FC<TestProps> = ({themeColor}: TestProps) => {
     if (themeColor !== undefined) {
@@ -20,7 +21,7 @@ const AntDesignTest: FC<TestProps> = ({themeColor}: TestProps) => {
         }]
     };
     return (<ConfigProvider locale={deDe}>
-        <Space direction={"vertical"} style={{display: "flex", marginLeft: "1em", marginRight: "1em"}}>
+        <Space direction={"vertical"} style={{display: "flex", marginLeft: "1em", marginRight: "1em", minWidth:"50%"}}>
             <PageHeader title={"Ant Design"} breadcrumb={routes}
                         avatar={{src: "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"}}>
             </PageHeader>
@@ -29,6 +30,7 @@ const AntDesignTest: FC<TestProps> = ({themeColor}: TestProps) => {
             <FormExample/>
             <NotificationExample/>
             <StoreStructureExample/>
+            <CustomizedComponentExample/>
         </Space>
     </ConfigProvider>);
 }

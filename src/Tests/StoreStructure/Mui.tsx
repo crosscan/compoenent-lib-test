@@ -1,4 +1,4 @@
-import React, {FC, Key, useState} from 'react';
+import React, {FC, useState} from 'react';
 import {Card, CardContent, Collapse, List, ListItemButton, ListItemIcon, ListItemText, Typography} from "@mui/material";
 import {ExpandLess, ExpandMore, Sensors, Store} from "@mui/icons-material";
 
